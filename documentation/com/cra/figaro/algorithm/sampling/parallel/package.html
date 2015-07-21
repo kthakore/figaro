@@ -1,0 +1,210 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>parallel - com.cra.figaro.algorithm.sampling.parallel</title>
+          <meta name="description" content="parallel - com.cra.figaro.algorithm.sampling.parallel" />
+          <meta name="keywords" content="parallel com.cra.figaro.algorithm.sampling.parallel" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../../index.html';
+            var hash = 'com.cra.figaro.algorithm.sampling.parallel.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../package.html" class="extype" name="com.cra">cra</a>.<a href="../../../package.html" class="extype" name="com.cra.figaro">figaro</a>.<a href="../../package.html" class="extype" name="com.cra.figaro.algorithm">algorithm</a>.<a href="../package.html" class="extype" name="com.cra.figaro.algorithm.sampling">sampling</a></p>
+        <h1>parallel</h1><span class="permalink">
+      <a href="../../../../../../index.html#com.cra.figaro.algorithm.sampling.parallel.package" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">parallel</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.cra.figaro.algorithm.sampling.parallel.ParAnytime" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ParAnytimeextendsParSamplingAlgorithm"></a>
+      <a id="ParAnytime:ParAnytime"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ParAnytime.html"><span class="name">ParAnytime</span></a><span class="result"> extends <a href="ParSamplingAlgorithm.html" class="extype" name="com.cra.figaro.algorithm.sampling.parallel.ParSamplingAlgorithm">ParSamplingAlgorithm</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.cra.figaro.algorithm.sampling.parallel.package@ParAnytimeextendsParSamplingAlgorithm" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Parallel anytime sampling algorithms.</p><div class="fullcomment"><div class="comment cmt"><p>Parallel anytime sampling algorithms. These algorithms have a parallel collection of algorithm instances
+that will do their work on separate threads, over separate universes.
+</p></div></div>
+    </li><li name="com.cra.figaro.algorithm.sampling.parallel.ParOneTime" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ParOneTimeextendsParSamplingAlgorithmwithOneTime"></a>
+      <a id="ParOneTime:ParOneTime"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ParOneTime.html"><span class="name">ParOneTime</span></a><span class="result"> extends <a href="ParSamplingAlgorithm.html" class="extype" name="com.cra.figaro.algorithm.sampling.parallel.ParSamplingAlgorithm">ParSamplingAlgorithm</a> with <a href="../../OneTime.html" class="extype" name="com.cra.figaro.algorithm.OneTime">OneTime</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.cra.figaro.algorithm.sampling.parallel.package@ParOneTimeextendsParSamplingAlgorithmwithOneTime" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Parallel one-time sampling algorithms.</p><div class="fullcomment"><div class="comment cmt"><p>Parallel one-time sampling algorithms. These algorithms have multiple instances that execute across multiple threads.
+</p></div></div>
+    </li><li name="com.cra.figaro.algorithm.sampling.parallel.ParSampler" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ParSamplerextendsBaseProbQuerySampler[com.cra.figaro.language.Reference]withParSamplingAlgorithm"></a>
+      <a id="ParSampler:ParSampler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ParSampler.html"><span class="name">ParSampler</span></a><span class="result"> extends <a href="../BaseProbQuerySampler.html" class="extype" name="com.cra.figaro.algorithm.sampling.BaseProbQuerySampler">BaseProbQuerySampler</a>[<a href="../../../language/Reference.html" class="extype" name="com.cra.figaro.language.Reference">Reference</a>] with <a href="ParSamplingAlgorithm.html" class="extype" name="com.cra.figaro.algorithm.sampling.parallel.ParSamplingAlgorithm">ParSamplingAlgorithm</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.cra.figaro.algorithm.sampling.parallel.package@ParSamplerextendsBaseProbQuerySampler[com.cra.figaro.language.Reference]withParSamplingAlgorithm" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Parallel version of a sampling algorithm.</p><div class="fullcomment"><div class="comment cmt"><p>Parallel version of a sampling algorithm. Has a parallel collection of algorithm instances
+that will do its work on separate threads, over separate universes. Uses Scala's parallel
+collections to divide up the work, so it will work best if told to run on a number of threads
+less than or equal to the number of worker threads Scala creates when operating over parallel
+collections.</p><p>This creates two major differences with how a user interacts with the algorithm. First of all,
+rather than defining a model on a universe and then starting the algorithm, the user must
+define a function that generates a universe and applies any evidence, and then pass that to
+the companion object to create the algorithm. The second major difference is that elements
+must be referred to using references, since each variable will exist as multiple elements
+across the different universes.</p><p>One-time sampling will be faster, since it divides the work over the different threads.
+Anytime sampling should provide more accurate results, since it can take more samples over
+the same amount of time. Both cases will most likely require more memory, at least using the
+current implementation of WeightedSampler, which keeps track of all values and weights that
+have been sampled. When querying, a weighted combination of the results of the various threads
+is returned. This last step adds some overhead, which should be negligible as long as you are
+taking a large number of samples.
+</p></div></div>
+    </li><li name="com.cra.figaro.algorithm.sampling.parallel.ParSamplingAlgorithm" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ParSamplingAlgorithmextendsAlgorithm"></a>
+      <a id="ParSamplingAlgorithm:ParSamplingAlgorithm"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ParSamplingAlgorithm.html"><span class="name">ParSamplingAlgorithm</span></a><span class="result"> extends <a href="../../Algorithm.html" class="extype" name="com.cra.figaro.algorithm.Algorithm">Algorithm</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.cra.figaro.algorithm.sampling.parallel.package@ParSamplingAlgorithmextendsAlgorithm" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Parallel sampling algorithms.</p><div class="fullcomment"><div class="comment cmt"><p>Parallel sampling algorithms. These algorithms have a parallel collection of algorithm instances
+that will do their work on separate threads, over separate universes.
+</p></div></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.cra.figaro.algorithm.sampling.parallel.ParImportance" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ParImportance"></a>
+      <a id="ParImportance:ParImportance"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ParImportance$.html"><span class="name">ParImportance</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.cra.figaro.algorithm.sampling.parallel.package@ParImportance" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

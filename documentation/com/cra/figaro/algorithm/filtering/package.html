@@ -1,0 +1,372 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>filtering - com.cra.figaro.algorithm.filtering</title>
+          <meta name="description" content="filtering - com.cra.figaro.algorithm.filtering" />
+          <meta name="keywords" content="filtering com.cra.figaro.algorithm.filtering" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'com.cra.figaro.algorithm.filtering.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.cra">cra</a>.<a href="../../package.html" class="extype" name="com.cra.figaro">figaro</a>.<a href="../package.html" class="extype" name="com.cra.figaro.algorithm">algorithm</a></p>
+        <h1>filtering</h1><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.package" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">filtering</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.cra.figaro.algorithm.filtering.FFBPHandler" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="FFBPHandlerextendsInnerBPHandler"></a>
+      <a id="FFBPHandler:FFBPHandler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="FFBPHandler.html"><span class="name">FFBPHandler</span></a><span class="result"> extends <a href="../factored/beliefpropagation/InnerBPHandler.html" class="extype" name="com.cra.figaro.algorithm.factored.beliefpropagation.InnerBPHandler">InnerBPHandler</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.package@FFBPHandlerextendsInnerBPHandler" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Trait for creating and running Belief Propagation within Factored Frontier.</p><div class="fullcomment"><div class="comment cmt"><p>Trait for creating and running Belief Propagation within Factored Frontier. BP runs as either a one time or anytime algorithm.
+</p></div></div>
+    </li><li name="com.cra.figaro.algorithm.filtering.FactoredFrontier" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="FactoredFrontierextendsFilteringwithOneTimeFilteringwithFFBPHandler"></a>
+      <a id="FactoredFrontier:FactoredFrontier"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FactoredFrontier.html"><span class="name">FactoredFrontier</span></a><span class="result"> extends <a href="Filtering.html" class="extype" name="com.cra.figaro.algorithm.filtering.Filtering">Filtering</a> with <a href="OneTimeFiltering.html" class="extype" name="com.cra.figaro.algorithm.filtering.OneTimeFiltering">OneTimeFiltering</a> with <a href="FFBPHandler.html" class="extype" name="com.cra.figaro.algorithm.filtering.FFBPHandler">FFBPHandler</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.package@FactoredFrontierextendsFilteringwithOneTimeFilteringwithFFBPHandler" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Abstract class that runs the Factored Frontier algorithm.</p><div class="fullcomment"><div class="comment cmt"><p>Abstract class that runs the Factored Frontier algorithm.
+Like a particle filter, the algorithm is supplied with models representing initial and static universes, as well as a universe transition function.</p><p>At each time step, the algorithm copies the marginal probabilities for each named element to a new dummy universe.
+This dummy universe is then supplied to the transition function.
+</p></div></div>
+    </li><li name="com.cra.figaro.algorithm.filtering.Filtering" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="FilteringextendsAlgorithm"></a>
+      <a id="Filtering:Filtering"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Filtering.html"><span class="name">Filtering</span></a><span class="result"> extends <a href="../Algorithm.html" class="extype" name="com.cra.figaro.algorithm.Algorithm">Algorithm</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.package@FilteringextendsAlgorithm" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The general class of filtering algorithms.</p><div class="fullcomment"><div class="comment cmt"><p>The general class of filtering algorithms. A filtering algorithm is provided with an initial model,
+represented by a universe encoding the probability distribution over the initial state,
+and a transition model, which maps a state to a universe encoding the probability distribution
+over the new state. An implementation of Filtering must implement the advanceTime,
+computeCurrentDistribution, and computeCurrentExpectation methods.</p><p>Querying and asserting evidence to a filtering algorithm are done using references. This is because references are stable over time,
+while the particular elements they refer to are not.
+</p></div></div>
+    </li><li name="com.cra.figaro.algorithm.filtering.OneTimeFiltering" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="OneTimeFilteringextendsFilteringwithOneTime"></a>
+      <a id="OneTimeFiltering:OneTimeFiltering"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="OneTimeFiltering.html"><span class="name">OneTimeFiltering</span></a><span class="result"> extends <a href="Filtering.html" class="extype" name="com.cra.figaro.algorithm.filtering.Filtering">Filtering</a> with <a href="../OneTime.html" class="extype" name="com.cra.figaro.algorithm.OneTime">OneTime</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.package@OneTimeFilteringextendsFilteringwithOneTime" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">One-time filtering algorithms.</p><div class="fullcomment"><div class="comment cmt"><p>One-time filtering algorithms. An implementation of OneTimeFiltering must implement the advanceTime,
+computeCurrentDistribution, and computeCurrentExpectation methods.
+</p></div></div>
+    </li><li name="com.cra.figaro.algorithm.filtering.OneTimeParticleFilter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OneTimeParticleFilterextendsFilteringwithParticleFilterwithOneTimeFiltering"></a>
+      <a id="OneTimeParticleFilter:OneTimeParticleFilter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="OneTimeParticleFilter.html"><span class="name">OneTimeParticleFilter</span></a><span class="result"> extends <a href="Filtering.html" class="extype" name="com.cra.figaro.algorithm.filtering.Filtering">Filtering</a> with <a href="ParticleFilter.html" class="extype" name="com.cra.figaro.algorithm.filtering.ParticleFilter">ParticleFilter</a> with <a href="OneTimeFiltering.html" class="extype" name="com.cra.figaro.algorithm.filtering.OneTimeFiltering">OneTimeFiltering</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.package@OneTimeParticleFilterextendsFilteringwithParticleFilterwithOneTimeFiltering" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A one-time particle filter.</p>
+    </li><li name="com.cra.figaro.algorithm.filtering.ParFiltering" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ParFilteringextendsAlgorithmwithOneTime"></a>
+      <a id="ParFiltering:ParFiltering"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ParFiltering.html"><span class="name">ParFiltering</span></a><span class="result"> extends <a href="../Algorithm.html" class="extype" name="com.cra.figaro.algorithm.Algorithm">Algorithm</a> with <a href="../OneTime.html" class="extype" name="com.cra.figaro.algorithm.OneTime">OneTime</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.package@ParFilteringextendsAlgorithmwithOneTime" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> A parallel version of Filtering.</p><div class="fullcomment"><div class="comment cmt"><p> A parallel version of Filtering. Specifically a version of OneTimeFiltering, since that's the only
+ target for parallelization right now.
+</p></div></div>
+    </li><li name="com.cra.figaro.algorithm.filtering.ParOneTimeParticleFilter" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ParOneTimeParticleFilterextendsParFilteringwithParticleFilter"></a>
+      <a id="ParOneTimeParticleFilter:ParOneTimeParticleFilter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ParOneTimeParticleFilter.html"><span class="name">ParOneTimeParticleFilter</span></a><span class="result"> extends <a href="ParFiltering.html" class="extype" name="com.cra.figaro.algorithm.filtering.ParFiltering">ParFiltering</a> with <a href="ParticleFilter.html" class="extype" name="com.cra.figaro.algorithm.filtering.ParticleFilter">ParticleFilter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.package@ParOneTimeParticleFilterextendsParFilteringwithParticleFilter" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A parallel one-time particle filter.</p><div class="fullcomment"><div class="comment cmt"><p>A parallel one-time particle filter. Distributes the work of generating particles at each time step over a specified
+number of threads. After generating the particles, they are recombined before re-sampling occurs. Instead of accepting
+initial and static universes as input, this method accepts functions that return universes. This is because each
+thread needs its own set of universes to work on. It is important that any elements created within those functions are
+explicitly assigned to the returned universe, not the implicit default universe.
+</p></div></div>
+    </li><li name="com.cra.figaro.algorithm.filtering.ParticleFilter" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ParticleFilterextendsAnyRef"></a>
+      <a id="ParticleFilter:ParticleFilter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ParticleFilter.html"><span class="name">ParticleFilter</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.package@ParticleFilterextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An abstract class of particle filters.</p><div class="fullcomment"><div class="comment cmt"><p>An abstract class of particle filters.
+A particle filter is provided with three models:
+a static model, containing a universe defining a distribution over static elements that do not change over time;
+an initial model, containing a universe defining a distribution over the initial state of time-varying elements;
+and a transition model, which is a function from the previous universe to a new universe. defining the way the distribution over the new state
+of the time-varying variables depends on their values in the previous state.
+The fourth argument to the particle filter is the number of particles to use at each time step.</p><p>The particle filter works in an online fashion. At each point in time, it maintains its current beliefs about the state of the system as a set of
+representative states. advanceTime is used to move forward one time step. The particle filter updates its beliefs in light
+of the new evidence.
+</p></div></div>
+    </li><li name="com.cra.figaro.algorithm.filtering.Snapshot" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SnapshotextendsAnyRef"></a>
+      <a id="Snapshot:Snapshot"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Snapshot.html"><span class="name">Snapshot</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.package@SnapshotextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A record of the values of a set of named elements at a particular point in time.</p>
+    </li><li name="com.cra.figaro.algorithm.filtering.State" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StateextendsAnyRef"></a>
+      <a id="State:State"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="State.html"><span class="name">State</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.package@StateextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A state contains snapshots of the static universe and the dynamic universe,
+representing a configuration of the static and dynamic variables in the system.</p>
+    </li><li name="com.cra.figaro.algorithm.filtering.UniverseWindow" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UniverseWindowextendsAnyRef"></a>
+      <a id="UniverseWindow:UniverseWindow"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="UniverseWindow.html"><span class="name">UniverseWindow</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.package@UniverseWindowextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A class representing a single window in time, with a current universe, a previous universe,
+and a static universe.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.cra.figaro.algorithm.filtering.FactoredFrontier" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FactoredFrontier"></a>
+      <a id="FactoredFrontier:FactoredFrontier"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="FactoredFrontier$.html"><span class="name">FactoredFrontier</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.package@FactoredFrontier" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="com.cra.figaro.algorithm.filtering.ParParticleFilter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ParParticleFilter"></a>
+      <a id="ParParticleFilter:ParParticleFilter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ParParticleFilter$.html"><span class="name">ParParticleFilter</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.package@ParParticleFilter" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A parallel implementation of a OneTimeParticleFilter.</p>
+    </li><li name="com.cra.figaro.algorithm.filtering.ParticleFilter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ParticleFilter"></a>
+      <a id="ParticleFilter:ParticleFilter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ParticleFilter$.html"><span class="name">ParticleFilter</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.package@ParticleFilter" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

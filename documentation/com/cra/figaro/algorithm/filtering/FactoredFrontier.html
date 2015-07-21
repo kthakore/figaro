@@ -1,0 +1,1052 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>FactoredFrontier - com.cra.figaro.algorithm.filtering.FactoredFrontier</title>
+          <meta name="description" content="FactoredFrontier - com.cra.figaro.algorithm.filtering.FactoredFrontier" />
+          <meta name="keywords" content="FactoredFrontier com.cra.figaro.algorithm.filtering.FactoredFrontier" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'com.cra.figaro.algorithm.filtering.FactoredFrontier';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="FactoredFrontier$.html" title="See companion object"><img src="../../../../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.cra">cra</a>.<a href="../../package.html" class="extype" name="com.cra.figaro">figaro</a>.<a href="../package.html" class="extype" name="com.cra.figaro.algorithm">algorithm</a>.<a href="package.html" class="extype" name="com.cra.figaro.algorithm.filtering">filtering</a></p>
+        <h1><a href="FactoredFrontier$.html" title="See companion object">FactoredFrontier</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="FactoredFrontier$.html" title="See companion object">object FactoredFrontier</a>
+            | <a href="package.html" class="extype" name="com.cra.figaro.algorithm.filtering">package filtering</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">FactoredFrontier</span><span class="result"> extends <a href="Filtering.html" class="extype" name="com.cra.figaro.algorithm.filtering.Filtering">Filtering</a> with <a href="OneTimeFiltering.html" class="extype" name="com.cra.figaro.algorithm.filtering.OneTimeFiltering">OneTimeFiltering</a> with <a href="FFBPHandler.html" class="extype" name="com.cra.figaro.algorithm.filtering.FFBPHandler">FFBPHandler</a></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Abstract class that runs the Factored Frontier algorithm.
+Like a particle filter, the algorithm is supplied with models representing initial and static universes, as well as a universe transition function.</p><p>At each time step, the algorithm copies the marginal probabilities for each named element to a new dummy universe.
+This dummy universe is then supplied to the transition function.
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="FFBPHandler.html" class="extype" name="com.cra.figaro.algorithm.filtering.FFBPHandler">FFBPHandler</a>, <a href="../factored/beliefpropagation/InnerBPHandler.html" class="extype" name="com.cra.figaro.algorithm.factored.beliefpropagation.InnerBPHandler">InnerBPHandler</a>, <a href="OneTimeFiltering.html" class="extype" name="com.cra.figaro.algorithm.filtering.OneTimeFiltering">OneTimeFiltering</a>, <a href="../OneTime.html" class="extype" name="com.cra.figaro.algorithm.OneTime">OneTime</a>, <a href="Filtering.html" class="extype" name="com.cra.figaro.algorithm.filtering.Filtering">Filtering</a>, <a href="../Algorithm.html" class="extype" name="com.cra.figaro.algorithm.Algorithm">Algorithm</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="com.cra.figaro.algorithm.filtering.FactoredFrontier"><span>FactoredFrontier</span></li><li class="in" name="com.cra.figaro.algorithm.filtering.FFBPHandler"><span>FFBPHandler</span></li><li class="in" name="com.cra.figaro.algorithm.factored.beliefpropagation.InnerBPHandler"><span>InnerBPHandler</span></li><li class="in" name="com.cra.figaro.algorithm.filtering.OneTimeFiltering"><span>OneTimeFiltering</span></li><li class="in" name="com.cra.figaro.algorithm.OneTime"><span>OneTime</span></li><li class="in" name="com.cra.figaro.algorithm.filtering.Filtering"><span>Filtering</span></li><li class="in" name="com.cra.figaro.algorithm.Algorithm"><span>Algorithm</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="com.cra.figaro.algorithm.filtering.FactoredFrontier#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(static:com.cra.figaro.language.Universe,initial:com.cra.figaro.language.Universe,transition:(com.cra.figaro.language.Universe,com.cra.figaro.language.Universe)=&gt;com.cra.figaro.language.Universe):com.cra.figaro.algorithm.filtering.FactoredFrontier"></a>
+      <a id="&lt;init&gt;:FactoredFrontier"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">FactoredFrontier</span><span class="params">(<span name="static">static: <a href="../../language/Universe.html" class="extype" name="com.cra.figaro.language.Universe">Universe</a></span>, <span name="initial">initial: <a href="../../language/Universe.html" class="extype" name="com.cra.figaro.language.Universe">Universe</a></span>, <span name="transition">transition: (<a href="../../language/Universe.html" class="extype" name="com.cra.figaro.language.Universe">Universe</a>, <a href="../../language/Universe.html" class="extype" name="com.cra.figaro.language.Universe">Universe</a>) ⇒ <a href="../../language/Universe.html" class="extype" name="com.cra.figaro.language.Universe">Universe</a></span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@&lt;init&gt;(static:com.cra.figaro.language.Universe,initial:com.cra.figaro.language.Universe,transition:(com.cra.figaro.language.Universe,com.cra.figaro.language.Universe)=&gt;com.cra.figaro.language.Universe):com.cra.figaro.algorithm.filtering.FactoredFrontier" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">static</dt><dd class="cmt"><p>The universe of elements that do not change over time.</p></dd><dt class="param">initial</dt><dd class="cmt"><p>The universe describing the distribution over the initial state of the system.</p></dd><dt class="param">transition</dt><dd class="cmt"><p>The transition model describing how the current state of the system depends on the static and previous, respectively.
+</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="com.cra.figaro.algorithm.factored.beliefpropagation.InnerBPHandler#createBP" visbl="prt" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="createBP(targets:List[com.cra.figaro.language.Element[_]],dependentUniverses:List[(com.cra.figaro.language.Universe,List[com.cra.figaro.language.NamedEvidence[_]])],dependentAlgorithm:(com.cra.figaro.language.Universe,List[com.cra.figaro.language.NamedEvidence[_]])=&gt;()=&gt;Double,depth:Int,upperBounds:Boolean):Unit"></a>
+      <a id="createBP(List[Element[_]],List[(Universe,List[NamedEvidence[_]])],(Universe,List[NamedEvidence[_]])⇒()⇒Double,Int,Boolean):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createBP</span><span class="params">(<span name="targets">targets: <span class="extype" name="scala.List">List</span>[<a href="../../language/Element.html" class="extype" name="com.cra.figaro.language.Element">Element</a>[_]]</span>, <span name="dependentUniverses">dependentUniverses: <span class="extype" name="scala.List">List</span>[(<a href="../../language/Universe.html" class="extype" name="com.cra.figaro.language.Universe">Universe</a>, <span class="extype" name="scala.List">List</span>[<a href="../../language/NamedEvidence.html" class="extype" name="com.cra.figaro.language.NamedEvidence">NamedEvidence</a>[_]])]</span>, <span name="dependentAlgorithm">dependentAlgorithm: (<a href="../../language/Universe.html" class="extype" name="com.cra.figaro.language.Universe">Universe</a>, <span class="extype" name="scala.List">List</span>[<a href="../../language/NamedEvidence.html" class="extype" name="com.cra.figaro.language.NamedEvidence">NamedEvidence</a>[_]]) ⇒ () ⇒ <span class="extype" name="scala.Double">Double</span></span>, <span name="depth">depth: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">Int.MaxValue</span></span>, <span name="upperBounds">upperBounds: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@createBP(targets:List[com.cra.figaro.language.Element[_]],dependentUniverses:List[(com.cra.figaro.language.Universe,List[com.cra.figaro.language.NamedEvidence[_]])],dependentAlgorithm:(com.cra.figaro.language.Universe,List[com.cra.figaro.language.NamedEvidence[_]])=&gt;()=&gt;Double,depth:Int,upperBounds:Boolean):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Instantiates the appropriate BP algorithm for the current time step.</p><div class="fullcomment"><div class="comment cmt"><p>Instantiates the appropriate BP algorithm for the current time step.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../factored/beliefpropagation/InnerBPHandler.html" class="extype" name="com.cra.figaro.algorithm.factored.beliefpropagation.InnerBPHandler">InnerBPHandler</a></dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.factored.beliefpropagation.InnerBPHandler#runBP" visbl="prt" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="runBP():Unit"></a>
+      <a id="runBP():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">runBP</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@runBP():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Runs the BP algorithm at the current time step.</p><div class="fullcomment"><div class="comment cmt"><p>Runs the BP algorithm at the current time step.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../factored/beliefpropagation/InnerBPHandler.html" class="extype" name="com.cra.figaro.algorithm.factored.beliefpropagation.InnerBPHandler">InnerBPHandler</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Concrete Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@##():Int" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.Algorithm#active" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="active:Boolean"></a>
+      <a id="active:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">active</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@active:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../Algorithm.html" class="extype" name="com.cra.figaro.algorithm.Algorithm">Algorithm</a></dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.filtering.FactoredFrontier#advanceTime" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="advanceTime(evidence:Seq[com.cra.figaro.language.NamedEvidence[_]]):Unit"></a>
+      <a id="advanceTime(Seq[NamedEvidence[_]]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">advanceTime</span><span class="params">(<span name="evidence">evidence: <span class="extype" name="scala.Seq">Seq</span>[<a href="../../language/NamedEvidence.html" class="extype" name="com.cra.figaro.language.NamedEvidence">NamedEvidence</a>[_]] = <span class="symbol">List()</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@advanceTime(evidence:Seq[com.cra.figaro.language.NamedEvidence[_]]):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Advance the algorithm one time step based on the provided evidence.</p><div class="fullcomment"><div class="comment cmt"><p>Advance the algorithm one time step based on the provided evidence.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.cra.figaro.algorithm.filtering.FactoredFrontier">FactoredFrontier</a> → <a href="Filtering.html" class="extype" name="com.cra.figaro.algorithm.filtering.Filtering">Filtering</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.factored.beliefpropagation.InnerBPHandler#bp" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="bp:com.cra.figaro.algorithm.factored.beliefpropagation.ProbQueryBeliefPropagation"></a>
+      <a id="bp:ProbQueryBeliefPropagation"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">bp</span><span class="result">: <a href="../factored/beliefpropagation/ProbQueryBeliefPropagation.html" class="extype" name="com.cra.figaro.algorithm.factored.beliefpropagation.ProbQueryBeliefPropagation">ProbQueryBeliefPropagation</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@bp:com.cra.figaro.algorithm.factored.beliefpropagation.ProbQueryBeliefPropagation" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">BP algorithm associated with this time step.</p><div class="fullcomment"><div class="comment cmt"><p>BP algorithm associated with this time step.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../package.html" class="extype" name="com.cra.figaro">com.cra.figaro</a>] </dd><dt>Definition Classes</dt><dd><a href="../factored/beliefpropagation/InnerBPHandler.html" class="extype" name="com.cra.figaro.algorithm.factored.beliefpropagation.InnerBPHandler">InnerBPHandler</a></dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.filtering.FactoredFrontier#cleanUp" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cleanUp():Unit"></a>
+      <a id="cleanUp():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cleanUp</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@cleanUp():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Called when the algorithm is killed.</p><div class="fullcomment"><div class="comment cmt"><p>Called when the algorithm is killed. By default, does nothing. Can be overridden.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.cra.figaro.algorithm.filtering.FactoredFrontier">FactoredFrontier</a> → <a href="../Algorithm.html" class="extype" name="com.cra.figaro.algorithm.Algorithm">Algorithm</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.filtering.FactoredFrontier#computeCurrentDistribution" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="computeCurrentDistribution[T](reference:com.cra.figaro.language.Reference[T]):Stream[(Double,T)]"></a>
+      <a id="computeCurrentDistribution[T](Reference[T]):Stream[(Double,T)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">computeCurrentDistribution</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="reference">reference: <a href="../../language/Reference.html" class="extype" name="com.cra.figaro.language.Reference">Reference</a>[<span class="extype" name="com.cra.figaro.algorithm.filtering.FactoredFrontier.computeCurrentDistribution.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Stream">Stream</span>[(<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="com.cra.figaro.algorithm.filtering.FactoredFrontier.computeCurrentDistribution.T">T</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@computeCurrentDistribution[T](reference:com.cra.figaro.language.Reference[T]):Stream[(Double,T)]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns the distribution over the element referred to by the reference at the current time point.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the distribution over the element referred to by the reference at the current time point.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.cra.figaro.algorithm.filtering.FactoredFrontier">FactoredFrontier</a> → <a href="Filtering.html" class="extype" name="com.cra.figaro.algorithm.filtering.Filtering">Filtering</a></dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.filtering.FactoredFrontier#computeCurrentExpectation" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="computeCurrentExpectation[T](reference:com.cra.figaro.language.Reference[T],function:T=&gt;Double):Double"></a>
+      <a id="computeCurrentExpectation[T](Reference[T],(T)⇒Double):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">computeCurrentExpectation</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="reference">reference: <a href="../../language/Reference.html" class="extype" name="com.cra.figaro.language.Reference">Reference</a>[<span class="extype" name="com.cra.figaro.algorithm.filtering.FactoredFrontier.computeCurrentExpectation.T">T</span>]</span>, <span name="function">function: (<span class="extype" name="com.cra.figaro.algorithm.filtering.FactoredFrontier.computeCurrentExpectation.T">T</span>) ⇒ <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@computeCurrentExpectation[T](reference:com.cra.figaro.language.Reference[T],function:T=&gt;Double):Double" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns the expectation of the element referred to by the reference
+under the given function at the current time point.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the expectation of the element referred to by the reference
+under the given function at the current time point.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.cra.figaro.algorithm.filtering.FactoredFrontier">FactoredFrontier</a> → <a href="Filtering.html" class="extype" name="com.cra.figaro.algorithm.filtering.Filtering">Filtering</a></dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.filtering.Filtering#computeCurrentProbability" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="computeCurrentProbability[T](reference:com.cra.figaro.language.Reference[T],predicate:T=&gt;Boolean):Double"></a>
+      <a id="computeCurrentProbability[T](Reference[T],(T)⇒Boolean):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">computeCurrentProbability</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="reference">reference: <a href="../../language/Reference.html" class="extype" name="com.cra.figaro.language.Reference">Reference</a>[<span class="extype" name="com.cra.figaro.algorithm.filtering.Filtering.computeCurrentProbability.T">T</span>]</span>, <span name="predicate">predicate: (<span class="extype" name="com.cra.figaro.algorithm.filtering.Filtering.computeCurrentProbability.T">T</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@computeCurrentProbability[T](reference:com.cra.figaro.language.Reference[T],predicate:T=&gt;Boolean):Double" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns the probability that the element referred to by the reference
+satisfies the given predicate at the current time point.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the probability that the element referred to by the reference
+satisfies the given predicate at the current time point.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Filtering.html" class="extype" name="com.cra.figaro.algorithm.filtering.Filtering">Filtering</a></dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.filtering.OneTimeFiltering#currentDistribution" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="currentDistribution[T](reference:com.cra.figaro.language.Reference[T]):Stream[(Double,T)]"></a>
+      <a id="currentDistribution[T](Reference[T]):Stream[(Double,T)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">currentDistribution</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="reference">reference: <a href="../../language/Reference.html" class="extype" name="com.cra.figaro.language.Reference">Reference</a>[<span class="extype" name="com.cra.figaro.algorithm.filtering.OneTimeFiltering.currentDistribution.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Stream">Stream</span>[(<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="com.cra.figaro.algorithm.filtering.OneTimeFiltering.currentDistribution.T">T</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@currentDistribution[T](reference:com.cra.figaro.language.Reference[T]):Stream[(Double,T)]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns the distribution over the element referred to by the reference at the current time point.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the distribution over the element referred to by the reference at the current time point.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="OneTimeFiltering.html" class="extype" name="com.cra.figaro.algorithm.filtering.OneTimeFiltering">OneTimeFiltering</a> → <a href="Filtering.html" class="extype" name="com.cra.figaro.algorithm.filtering.Filtering">Filtering</a></dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.filtering.OneTimeFiltering#currentExpectation" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="currentExpectation[T](reference:com.cra.figaro.language.Reference[T],function:T=&gt;Double):Double"></a>
+      <a id="currentExpectation[T](Reference[T],(T)⇒Double):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">currentExpectation</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="reference">reference: <a href="../../language/Reference.html" class="extype" name="com.cra.figaro.language.Reference">Reference</a>[<span class="extype" name="com.cra.figaro.algorithm.filtering.OneTimeFiltering.currentExpectation.T">T</span>]</span>, <span name="function">function: (<span class="extype" name="com.cra.figaro.algorithm.filtering.OneTimeFiltering.currentExpectation.T">T</span>) ⇒ <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@currentExpectation[T](reference:com.cra.figaro.language.Reference[T],function:T=&gt;Double):Double" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns the expectation of the element referred to by the reference
+under the given function at the current time point.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the expectation of the element referred to by the reference
+under the given function at the current time point.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="OneTimeFiltering.html" class="extype" name="com.cra.figaro.algorithm.filtering.OneTimeFiltering">OneTimeFiltering</a> → <a href="Filtering.html" class="extype" name="com.cra.figaro.algorithm.filtering.Filtering">Filtering</a></dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.filtering.OneTimeFiltering#currentProbability" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="currentProbability[T](reference:com.cra.figaro.language.Reference[T],predicate:T=&gt;Boolean):Double"></a>
+      <a id="currentProbability[T](Reference[T],(T)⇒Boolean):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">currentProbability</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="reference">reference: <a href="../../language/Reference.html" class="extype" name="com.cra.figaro.language.Reference">Reference</a>[<span class="extype" name="com.cra.figaro.algorithm.filtering.OneTimeFiltering.currentProbability.T">T</span>]</span>, <span name="predicate">predicate: (<span class="extype" name="com.cra.figaro.algorithm.filtering.OneTimeFiltering.currentProbability.T">T</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@currentProbability[T](reference:com.cra.figaro.language.Reference[T],predicate:T=&gt;Boolean):Double" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns the probability that the element referred to by the reference
+satisfies the given predicate at the current time point.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the probability that the element referred to by the reference
+satisfies the given predicate at the current time point.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="OneTimeFiltering.html" class="extype" name="com.cra.figaro.algorithm.filtering.OneTimeFiltering">OneTimeFiltering</a> → <a href="Filtering.html" class="extype" name="com.cra.figaro.algorithm.filtering.Filtering">Filtering</a></dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.filtering.Filtering#currentProbability" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="currentProbability[T](reference:com.cra.figaro.language.Reference[T],value:T):Double"></a>
+      <a id="currentProbability[T](Reference[T],T):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">currentProbability</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="reference">reference: <a href="../../language/Reference.html" class="extype" name="com.cra.figaro.language.Reference">Reference</a>[<span class="extype" name="com.cra.figaro.algorithm.filtering.Filtering.currentProbability.T">T</span>]</span>, <span name="value">value: <span class="extype" name="com.cra.figaro.algorithm.filtering.Filtering.currentProbability.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@currentProbability[T](reference:com.cra.figaro.language.Reference[T],value:T):Double" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns the probability that the element referred to by the reference
+produces the given value at the current time point.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the probability that the element referred to by the reference
+produces the given value at the current time point.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Filtering.html" class="extype" name="com.cra.figaro.algorithm.filtering.Filtering">Filtering</a></dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.filtering.FactoredFrontier#currentStatic" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="currentStatic:com.cra.figaro.language.Universe"></a>
+      <a id="currentStatic:Universe"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">currentStatic</span><span class="result">: <a href="../../language/Universe.html" class="extype" name="com.cra.figaro.language.Universe">Universe</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@currentStatic:com.cra.figaro.language.Universe" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Dummy static universe associated with this time step.</p><div class="fullcomment"><div class="comment cmt"><p>Dummy static universe associated with this time step.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="com.cra.figaro.algorithm.filtering.FactoredFrontier">FactoredFrontier</a> → <a href="FFBPHandler.html" class="extype" name="com.cra.figaro.algorithm.filtering.FFBPHandler">FFBPHandler</a></dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.factored.beliefpropagation.InnerBPHandler#currentUniverse" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="currentUniverse:com.cra.figaro.language.Universe"></a>
+      <a id="currentUniverse:Universe"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">currentUniverse</span><span class="result">: <a href="../../language/Universe.html" class="extype" name="com.cra.figaro.language.Universe">Universe</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@currentUniverse:com.cra.figaro.language.Universe" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Universe associated with this algorithm.</p><div class="fullcomment"><div class="comment cmt"><p>Universe associated with this algorithm.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../factored/beliefpropagation/InnerBPHandler.html" class="extype" name="com.cra.figaro.algorithm.factored.beliefpropagation.InnerBPHandler">InnerBPHandler</a></dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.filtering.FactoredFrontier#dependentAlgorithm" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="dependentAlgorithm:(com.cra.figaro.language.Universe,List[com.cra.figaro.language.NamedEvidence[_]])=&gt;()=&gt;Double"></a>
+      <a id="dependentAlgorithm:(Universe,List[NamedEvidence[_]])⇒()⇒Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dependentAlgorithm</span><span class="result">: (<a href="../../language/Universe.html" class="extype" name="com.cra.figaro.language.Universe">Universe</a>, <span class="extype" name="scala.collection.immutable.List">List</span>[<a href="../../language/NamedEvidence.html" class="extype" name="com.cra.figaro.language.NamedEvidence">NamedEvidence</a>[_]]) ⇒ () ⇒ <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@dependentAlgorithm:(com.cra.figaro.language.Universe,List[com.cra.figaro.language.NamedEvidence[_]])=&gt;()=&gt;Double" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="com.cra.figaro.algorithm.filtering.FactoredFrontier#dependentUniverse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="dependentUniverse:List[Nothing]"></a>
+      <a id="dependentUniverse:List[Nothing]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dependentUniverse</span><span class="result">: <span class="extype" name="scala.collection.immutable.List">List</span>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@dependentUniverse:List[Nothing]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="com.cra.figaro.algorithm.OneTime#doKill" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doKill():Unit"></a>
+      <a id="doKill():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doKill</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@doKill():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../package.html" class="extype" name="com.cra.figaro.algorithm">com.cra.figaro.algorithm</a>] </dd><dt>Definition Classes</dt><dd><a href="../OneTime.html" class="extype" name="com.cra.figaro.algorithm.OneTime">OneTime</a> → <a href="../Algorithm.html" class="extype" name="com.cra.figaro.algorithm.Algorithm">Algorithm</a></dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.OneTime#doResume" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doResume():Unit"></a>
+      <a id="doResume():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doResume</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@doResume():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../package.html" class="extype" name="com.cra.figaro.algorithm">com.cra.figaro.algorithm</a>] </dd><dt>Definition Classes</dt><dd><a href="../OneTime.html" class="extype" name="com.cra.figaro.algorithm.OneTime">OneTime</a> → <a href="../Algorithm.html" class="extype" name="com.cra.figaro.algorithm.Algorithm">Algorithm</a></dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.OneTime#doStart" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doStart():Unit"></a>
+      <a id="doStart():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doStart</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@doStart():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../package.html" class="extype" name="com.cra.figaro.algorithm">com.cra.figaro.algorithm</a>] </dd><dt>Definition Classes</dt><dd><a href="../OneTime.html" class="extype" name="com.cra.figaro.algorithm.OneTime">OneTime</a> → <a href="../Algorithm.html" class="extype" name="com.cra.figaro.algorithm.Algorithm">Algorithm</a></dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.OneTime#doStop" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doStop():Unit"></a>
+      <a id="doStop():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doStop</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@doStop():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../package.html" class="extype" name="com.cra.figaro.algorithm">com.cra.figaro.algorithm</a>] </dd><dt>Definition Classes</dt><dd><a href="../OneTime.html" class="extype" name="com.cra.figaro.algorithm.OneTime">OneTime</a> → <a href="../Algorithm.html" class="extype" name="com.cra.figaro.algorithm.Algorithm">Algorithm</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.filtering.FFBPHandler#getNamedElements" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getNamedElements(u:com.cra.figaro.language.Universe):List[com.cra.figaro.language.Element[_]]"></a>
+      <a id="getNamedElements(Universe):List[Element[_]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getNamedElements</span><span class="params">(<span name="u">u: <a href="../../language/Universe.html" class="extype" name="com.cra.figaro.language.Universe">Universe</a></span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="../../language/Element.html" class="extype" name="com.cra.figaro.language.Element">Element</a>[_]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@getNamedElements(u:com.cra.figaro.language.Universe):List[com.cra.figaro.language.Element[_]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns all named elements in this universe.</p><div class="fullcomment"><div class="comment cmt"><p>Returns all named elements in this universe.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="FFBPHandler.html" class="extype" name="com.cra.figaro.algorithm.filtering.FFBPHandler">FFBPHandler</a></dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.filtering.FactoredFrontier#initialize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="initialize():Unit"></a>
+      <a id="initialize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">initialize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@initialize():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Called when the algorithm is started before running any steps.</p><div class="fullcomment"><div class="comment cmt"><p>Called when the algorithm is started before running any steps. By default, does nothing. Can be overridden.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.cra.figaro.algorithm.filtering.FactoredFrontier">FactoredFrontier</a> → <a href="../Algorithm.html" class="extype" name="com.cra.figaro.algorithm.Algorithm">Algorithm</a></dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.Algorithm#isActive" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isActive:Boolean"></a>
+      <a id="isActive:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isActive</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@isActive:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../Algorithm.html" class="extype" name="com.cra.figaro.algorithm.Algorithm">Algorithm</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.Algorithm#kill" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="kill():Unit"></a>
+      <a id="kill():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">kill</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@kill():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Kill the algorithm so that it is inactive.</p><div class="fullcomment"><div class="comment cmt"><p>Kill the algorithm so that it is inactive. It will no longer be able to provide answers.Throws
+AlgorithmInactiveException if the algorithm is not active.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../Algorithm.html" class="extype" name="com.cra.figaro.algorithm.Algorithm">Algorithm</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.Algorithm#resume" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="resume():Unit"></a>
+      <a id="resume():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">resume</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@resume():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Resume the computation of the algorithm, if it has been stopped.</p><div class="fullcomment"><div class="comment cmt"><p>Resume the computation of the algorithm, if it has been stopped. Throws AlgorithmInactiveException if
+the algorithm is not active.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../Algorithm.html" class="extype" name="com.cra.figaro.algorithm.Algorithm">Algorithm</a></dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.filtering.FactoredFrontier#run" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="run():Unit"></a>
+      <a id="run():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">run</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@run():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Run the algorithm, performing its computation to completion.</p><div class="fullcomment"><div class="comment cmt"><p>Run the algorithm, performing its computation to completion.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.cra.figaro.algorithm.filtering.FactoredFrontier">FactoredFrontier</a> → <a href="../OneTime.html" class="extype" name="com.cra.figaro.algorithm.OneTime">OneTime</a></dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.Algorithm#start" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="start():Unit"></a>
+      <a id="start():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">start</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@start():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Start the algorithm and make it active.</p><div class="fullcomment"><div class="comment cmt"><p>Start the algorithm and make it active. After it returns, the algorithm must be ready to provide
+answers. Throws AlgorithmActiveException if the algorithm is already active.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../Algorithm.html" class="extype" name="com.cra.figaro.algorithm.Algorithm">Algorithm</a></dd></dl></div>
+    </li><li name="com.cra.figaro.algorithm.Algorithm#stop" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="stop():Unit"></a>
+      <a id="stop():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">stop</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@stop():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Stop the algorithm from computing.</p><div class="fullcomment"><div class="comment cmt"><p>Stop the algorithm from computing. The algorithm is still ready to provide answers after it returns.
+Throws AlgorithmInactiveException if the algorithm is not active.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../Algorithm.html" class="extype" name="com.cra.figaro.algorithm.Algorithm">Algorithm</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@toString():String" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.filtering.FactoredFrontier@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="com.cra.figaro.algorithm.filtering.FFBPHandler">
+              <h3>Inherited from <a href="FFBPHandler.html" class="extype" name="com.cra.figaro.algorithm.filtering.FFBPHandler">FFBPHandler</a></h3>
+            </div><div class="parent" name="com.cra.figaro.algorithm.factored.beliefpropagation.InnerBPHandler">
+              <h3>Inherited from <a href="../factored/beliefpropagation/InnerBPHandler.html" class="extype" name="com.cra.figaro.algorithm.factored.beliefpropagation.InnerBPHandler">InnerBPHandler</a></h3>
+            </div><div class="parent" name="com.cra.figaro.algorithm.filtering.OneTimeFiltering">
+              <h3>Inherited from <a href="OneTimeFiltering.html" class="extype" name="com.cra.figaro.algorithm.filtering.OneTimeFiltering">OneTimeFiltering</a></h3>
+            </div><div class="parent" name="com.cra.figaro.algorithm.OneTime">
+              <h3>Inherited from <a href="../OneTime.html" class="extype" name="com.cra.figaro.algorithm.OneTime">OneTime</a></h3>
+            </div><div class="parent" name="com.cra.figaro.algorithm.filtering.Filtering">
+              <h3>Inherited from <a href="Filtering.html" class="extype" name="com.cra.figaro.algorithm.filtering.Filtering">Filtering</a></h3>
+            </div><div class="parent" name="com.cra.figaro.algorithm.Algorithm">
+              <h3>Inherited from <a href="../Algorithm.html" class="extype" name="com.cra.figaro.algorithm.Algorithm">Algorithm</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

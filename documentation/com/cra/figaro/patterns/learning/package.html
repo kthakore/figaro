@@ -1,0 +1,266 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>learning - com.cra.figaro.patterns.learning</title>
+          <meta name="description" content="learning - com.cra.figaro.patterns.learning" />
+          <meta name="keywords" content="learning com.cra.figaro.patterns.learning" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'com.cra.figaro.patterns.learning.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.cra">cra</a>.<a href="../../package.html" class="extype" name="com.cra.figaro">figaro</a>.<a href="../package.html" class="extype" name="com.cra.figaro.patterns">patterns</a></p>
+        <h1>learning</h1><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.patterns.learning.package" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">learning</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.cra.figaro.patterns.learning.ModelParameters" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ModelParametersextendsElementCollection"></a>
+      <a id="ModelParameters:ModelParameters"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ModelParameters.html"><span class="name">ModelParameters</span></a><span class="result"> extends <a href="../../language/ElementCollection.html" class="extype" name="com.cra.figaro.language.ElementCollection">ElementCollection</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.patterns.learning.package@ModelParametersextendsElementCollection" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A class representing the prior and posterior parameters of a model
+</p>
+    </li><li name="com.cra.figaro.patterns.learning.ParameterArray" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ParameterArrayextendsParameterTypewithProductwithSerializable"></a>
+      <a id="ParameterArray:ParameterArray"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ParameterArray.html"><span class="name">ParameterArray</span></a><span class="params">(<span name="p">p: <a href="../../language/Parameter.html" class="extype" name="com.cra.figaro.language.Parameter">Parameter</a>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]]</span>)</span><span class="result"> extends <a href="ParameterType.html" class="extype" name="com.cra.figaro.patterns.learning.ParameterType">ParameterType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.patterns.learning.package@ParameterArrayextendsParameterTypewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Learnable parameters whose MAP value is an array of doubles
+</p>
+    </li><li name="com.cra.figaro.patterns.learning.ParameterCollection" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ParameterCollectionextendsAnyRef"></a>
+      <a id="ParameterCollection:ParameterCollection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ParameterCollection.html"><span class="name">ParameterCollection</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.patterns.learning.package@ParameterCollectionextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Defines a collection of prior or posterior parameters, obtained from a set of ModelParameters
+</p>
+    </li><li name="com.cra.figaro.patterns.learning.ParameterDouble" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ParameterDoubleextendsParameterTypewithProductwithSerializable"></a>
+      <a id="ParameterDouble:ParameterDouble"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ParameterDouble.html"><span class="name">ParameterDouble</span></a><span class="params">(<span name="p">p: <a href="../../language/Parameter.html" class="extype" name="com.cra.figaro.language.Parameter">Parameter</a>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result"> extends <a href="ParameterType.html" class="extype" name="com.cra.figaro.patterns.learning.ParameterType">ParameterType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.patterns.learning.package@ParameterDoubleextendsParameterTypewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Learnable parameters whose MAP value is a double
+</p>
+    </li><li name="com.cra.figaro.patterns.learning.ParameterType" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ParameterTypeextendsAnyRef"></a>
+      <a id="ParameterType:ParameterType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ParameterType.html"><span class="name">ParameterType</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.patterns.learning.package@ParameterTypeextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Case classes defining type parameters of parameter elements.</p><div class="fullcomment"><div class="comment cmt"><p>Case classes defining type parameters of parameter elements.
+These are used for matching on return types of parameter collections, and for
+correctly instantiating elements from the posterior and prior parameters.
+</p></div></div>
+    </li><li name="com.cra.figaro.patterns.learning.PrimitiveArray" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PrimitiveArrayextendsParameterTypewithProductwithSerializable"></a>
+      <a id="PrimitiveArray:PrimitiveArray"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PrimitiveArray.html"><span class="name">PrimitiveArray</span></a><span class="params">(<span name="a">a: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result"> extends <a href="ParameterType.html" class="extype" name="com.cra.figaro.patterns.learning.ParameterType">ParameterType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.patterns.learning.package@PrimitiveArrayextendsParameterTypewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Parameters whose MAP value is an array of doubles
+</p>
+    </li><li name="com.cra.figaro.patterns.learning.PrimitiveDouble" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PrimitiveDoubleextendsParameterTypewithProductwithSerializable"></a>
+      <a id="PrimitiveDouble:PrimitiveDouble"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PrimitiveDouble.html"><span class="name">PrimitiveDouble</span></a><span class="params">(<span name="d">d: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result"> extends <a href="ParameterType.html" class="extype" name="com.cra.figaro.patterns.learning.ParameterType">ParameterType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.patterns.learning.package@PrimitiveDoubleextendsParameterTypewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Parameters whose MAP value is a double
+</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.cra.figaro.patterns.learning.ModelParameters" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ModelParameters"></a>
+      <a id="ModelParameters:ModelParameters"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ModelParameters$.html"><span class="name">ModelParameters</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.patterns.learning.package@ModelParameters" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="com.cra.figaro.patterns.learning.ParameterType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ParameterType"></a>
+      <a id="ParameterType:ParameterType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ParameterType$.html"><span class="name">ParameterType</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.patterns.learning.package@ParameterType" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

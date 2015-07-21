@@ -1,0 +1,370 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>learning - com.cra.figaro.algorithm.learning</title>
+          <meta name="description" content="learning - com.cra.figaro.algorithm.learning" />
+          <meta name="keywords" content="learning com.cra.figaro.algorithm.learning" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'com.cra.figaro.algorithm.learning.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.cra">cra</a>.<a href="../../package.html" class="extype" name="com.cra.figaro">figaro</a>.<a href="../package.html" class="extype" name="com.cra.figaro.algorithm">algorithm</a></p>
+        <h1>learning</h1><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.learning.package" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">learning</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.cra.figaro.algorithm.learning.EMTerminationCriteria" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="EMTerminationCriteriaextendsAnyRef"></a>
+      <a id="EMTerminationCriteria:EMTerminationCriteria"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="EMTerminationCriteria.html"><span class="name">EMTerminationCriteria</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.learning.package@EMTerminationCriteriaextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Termination criteria for EM algorithms.</p><div class="fullcomment"><div class="comment cmt"><p>Termination criteria for EM algorithms. A termination criteria can be passed as an argument to the EM apply method.
+</p></div></div>
+    </li><li name="com.cra.figaro.algorithm.learning.ExpectationMaximization" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ExpectationMaximizationextendsAlgorithmwithParameterLearner"></a>
+      <a id="ExpectationMaximization:ExpectationMaximization"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ExpectationMaximization.html"><span class="name">ExpectationMaximization</span></a><span class="result"> extends <a href="../Algorithm.html" class="extype" name="com.cra.figaro.algorithm.Algorithm">Algorithm</a> with <a href="../ParameterLearner.html" class="extype" name="com.cra.figaro.algorithm.ParameterLearner">ParameterLearner</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.learning.package@ExpectationMaximizationextendsAlgorithmwithParameterLearner" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Expectation maximization iteratively produces an estimate of sufficient statistics for learnable parameters,
+then maximizes the parameters according to the estimate.</p><div class="fullcomment"><div class="comment cmt"><p>Expectation maximization iteratively produces an estimate of sufficient statistics for learnable parameters,
+then maximizes the parameters according to the estimate. This trait can be extended with a different expectation
+or maximization algorithm; see the code for details.
+</p></div></div>
+    </li><li name="com.cra.figaro.algorithm.learning.ExpectationMaximizationWithFactors" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ExpectationMaximizationWithFactorsextendsExpectationMaximization"></a>
+      <a id="ExpectationMaximizationWithFactors:ExpectationMaximizationWithFactors"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ExpectationMaximizationWithFactors.html"><span class="name">ExpectationMaximizationWithFactors</span></a><span class="result"> extends <a href="ExpectationMaximization.html" class="extype" name="com.cra.figaro.algorithm.learning.ExpectationMaximization">ExpectationMaximization</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.learning.package@ExpectationMaximizationWithFactorsextendsExpectationMaximization" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An EM algorithm which learns parameters using a factored algorithm
+</p>
+    </li><li name="com.cra.figaro.algorithm.learning.GeneralizedEM" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GeneralizedEMextendsExpectationMaximization"></a>
+      <a id="GeneralizedEM:GeneralizedEM"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GeneralizedEM.html"><span class="name">GeneralizedEM</span></a><span class="result"> extends <a href="ExpectationMaximization.html" class="extype" name="com.cra.figaro.algorithm.learning.ExpectationMaximization">ExpectationMaximization</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.learning.package@GeneralizedEMextendsExpectationMaximization" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An EM algorithm which learns parameters using an inference algorithm provided as an argument
+</p>
+    </li><li name="com.cra.figaro.algorithm.learning.GeneralizedOnlineEM" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GeneralizedOnlineEMextendsOnlineExpectationMaximization"></a>
+      <a id="GeneralizedOnlineEM:GeneralizedOnlineEM"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GeneralizedOnlineEM.html"><span class="name">GeneralizedOnlineEM</span></a><span class="result"> extends <a href="OnlineExpectationMaximization.html" class="extype" name="com.cra.figaro.algorithm.learning.OnlineExpectationMaximization">OnlineExpectationMaximization</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.learning.package@GeneralizedOnlineEMextendsOnlineExpectationMaximization" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An EM algorithm which learns parameters using an inference algorithm provided as an argument
+</p>
+    </li><li name="com.cra.figaro.algorithm.learning.MaxIterations" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MaxIterationsextendsEMTerminationCriteria"></a>
+      <a id="MaxIterations:MaxIterations"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="MaxIterations.html"><span class="name">MaxIterations</span></a><span class="result"> extends <a href="EMTerminationCriteria.html" class="extype" name="com.cra.figaro.algorithm.learning.EMTerminationCriteria">EMTerminationCriteria</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.learning.package@MaxIterationsextendsEMTerminationCriteria" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Terminate when the maximum number of iterations has been reached
+</p>
+    </li><li name="com.cra.figaro.algorithm.learning.OnlineExpectationMaximization" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="OnlineExpectationMaximizationextendsOnlinewithExpectationMaximization"></a>
+      <a id="OnlineExpectationMaximization:OnlineExpectationMaximization"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="OnlineExpectationMaximization.html"><span class="name">OnlineExpectationMaximization</span></a><span class="result"> extends <a href="../online/Online.html" class="extype" name="com.cra.figaro.algorithm.online.Online">Online</a> with <a href="ExpectationMaximization.html" class="extype" name="com.cra.figaro.algorithm.learning.ExpectationMaximization">ExpectationMaximization</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.learning.package@OnlineExpectationMaximizationextendsOnlinewithExpectationMaximization" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An EM algorithm which learns parameters incrementally
+</p>
+    </li><li name="com.cra.figaro.algorithm.learning.OnlineExpectationMaximizationWithFactors" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OnlineExpectationMaximizationWithFactorsextendsOnlineExpectationMaximization"></a>
+      <a id="OnlineExpectationMaximizationWithFactors:OnlineExpectationMaximizationWithFactors"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="OnlineExpectationMaximizationWithFactors.html"><span class="name">OnlineExpectationMaximizationWithFactors</span></a><span class="result"> extends <a href="OnlineExpectationMaximization.html" class="extype" name="com.cra.figaro.algorithm.learning.OnlineExpectationMaximization">OnlineExpectationMaximization</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.learning.package@OnlineExpectationMaximizationWithFactorsextendsOnlineExpectationMaximization" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An online EM algorithm which learns parameters using a factored algorithm
+</p>
+    </li><li name="com.cra.figaro.algorithm.learning.SufficientStatisticsFactor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SufficientStatisticsFactorextendsAnyRef"></a>
+      <a id="SufficientStatisticsFactor:SufficientStatisticsFactor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SufficientStatisticsFactor.html"><span class="name">SufficientStatisticsFactor</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.learning.package@SufficientStatisticsFactorextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Methods for creating probabilistic factors associated with elements and their sufficient statistics.</p>
+    </li><li name="com.cra.figaro.algorithm.learning.SufficientStatisticsMagnitudes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SufficientStatisticsMagnitudesextendsEMTerminationCriteria"></a>
+      <a id="SufficientStatisticsMagnitudes:SufficientStatisticsMagnitudes"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SufficientStatisticsMagnitudes.html"><span class="name">SufficientStatisticsMagnitudes</span></a><span class="result"> extends <a href="EMTerminationCriteria.html" class="extype" name="com.cra.figaro.algorithm.learning.EMTerminationCriteria">EMTerminationCriteria</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.learning.package@SufficientStatisticsMagnitudesextendsEMTerminationCriteria" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Terminate when the magnitude of sufficient statistics does not exhibit a change greater than the specified tolerance.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.cra.figaro.algorithm.learning.EMTerminationCriteria" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EMTerminationCriteria"></a>
+      <a id="EMTerminationCriteria:EMTerminationCriteria"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="EMTerminationCriteria$.html"><span class="name">EMTerminationCriteria</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.learning.package@EMTerminationCriteria" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="com.cra.figaro.algorithm.learning.EMWithBP" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EMWithBP"></a>
+      <a id="EMWithBP:EMWithBP"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="EMWithBP$.html"><span class="name">EMWithBP</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.learning.package@EMWithBP" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="com.cra.figaro.algorithm.learning.EMWithImportance" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EMWithImportance"></a>
+      <a id="EMWithImportance:EMWithImportance"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="EMWithImportance$.html"><span class="name">EMWithImportance</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.learning.package@EMWithImportance" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="com.cra.figaro.algorithm.learning.EMWithMH" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EMWithMH"></a>
+      <a id="EMWithMH:EMWithMH"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="EMWithMH$.html"><span class="name">EMWithMH</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.learning.package@EMWithMH" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="com.cra.figaro.algorithm.learning.EMWithVE" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EMWithVE"></a>
+      <a id="EMWithVE:EMWithVE"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="EMWithVE$.html"><span class="name">EMWithVE</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.cra.figaro.algorithm.learning.package@EMWithVE" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
